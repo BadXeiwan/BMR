@@ -218,14 +218,14 @@ end)
 
 -- keybind
 UserInputService.InputBegan:Connect(function(Input)
-	if Input.KeyCode == Enum.KeyCode.F7 then
+	if Input.KeyCode == Enum.KeyCode.F6 then
 		AutofarmConfig.Enabled = not AutofarmConfig.Enabled
 		if not AutofarmConfig.Enabled then
 			if LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
 				LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3550, 58.5, 750)
 			end
 		end
-		notify(" " .. (AutofarmConfig.Enabled and "<font color=\"rgb(128,255,128)\"></font>\n<font size=\"15\"> ~" .. string.format("%.1f", ) .. " sec</font>" or "<font color=\"rgb(255,128,128)\"></font>\n<font size=\"15\"></font>"),2.5)
+		notify(" " .. (AutofarmConfig.Enabled and "<font color=\"rgb(128,255,128)\"></font>\n<font size=\"15\"> ~" .. string.format("%.1f", Wait) .. " sec</font>" or "<font color=\"rgb(255,128,128)\"></font>\n<font size=\"15\"></font>"),2.5)
 	end
 end)
 
